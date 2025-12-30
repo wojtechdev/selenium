@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "selenium-webdriver": "^4.39.0"
+  },
+  "scripts": {
+    "test": "mocha --no-timeouts 'tests/*.js'"
+  },
+  "type": "module"
+}
+
