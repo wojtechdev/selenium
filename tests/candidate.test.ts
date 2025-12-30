@@ -1,9 +1,9 @@
-import { buildDriver } from '../utils/driver.js';
-import { By } from 'selenium-webdriver';
+import { buildDriver } from '../utils/driver';
+import { By, WebDriver } from 'selenium-webdriver';
 import { expect } from 'chai';
 
 describe('UŁ Candidate Page', () => {
-  let driver;
+  let driver: WebDriver;
   const BASE_URL = 'https://www.uni.lodz.pl/strefa-kandydacka';
 
   before(async () => {

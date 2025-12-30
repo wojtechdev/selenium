@@ -1,9 +1,9 @@
-import { buildDriver } from '../utils/driver.js';
-import { By, Key, until } from 'selenium-webdriver';
+import { buildDriver } from '../utils/driver';
+import { By, Key, until, WebDriver } from 'selenium-webdriver';
 import { expect } from 'chai';
 
 describe('UŁ Home Page', () => {
-  let driver;
+  let driver: WebDriver;
   const BASE_URL = 'https://www.uni.lodz.pl/';
 
   before(async () => {
