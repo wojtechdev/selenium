@@ -1,0 +1,237 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-12-30T17:23:03.955Z",
+    "end": "2025-12-30T17:23:06.004Z",
+    "duration": 2049,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23a8ca89-0d69-445e-9996-992a399573ac",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0ce5d819-46a7-40a5-98ee-1a6dff80cb5f",
+          "title": "UŁ Candidate Page",
+          "fullFile": "C:\\Users\\Wojtek\\Desktop\\selenium\\tests\\candidate.test.js",
+          "file": "\\tests\\candidate.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"UŁ Candidate Page\"",
+              "fullTitle": "UŁ Candidate Page \"before all\" hook in \"UŁ Candidate Page\"",
+              "timedOut": null,
+              "duration": 1154,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver = await buildDriver();\nawait driver.get(BASE_URL);",
+              "err": {},
+              "uuid": "f989a425-e74d-457f-94ac-80f25b3abf83",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"UŁ Candidate Page\"",
+              "fullTitle": "UŁ Candidate Page \"after all\" hook in \"UŁ Candidate Page\"",
+              "timedOut": null,
+              "duration": 18,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "0258d08f-6946-4dad-9b24-716df6fec355",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "successfully loads candidate page",
+              "fullTitle": "UŁ Candidate Page successfully loads candidate page",
+              "timedOut": null,
+              "duration": 15,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const title = await driver\n  .findElement(By.id('hero-page-title'))\n  .getText()\n  .then((value) => value);\nexpect(title.replace(/\\s+/g, ' ').trim()).to.equal('STREFA KANDYDACKA');",
+              "err": {},
+              "uuid": "8951c2a1-ae41-43da-bd28-0adadf815009",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8951c2a1-ae41-43da-bd28-0adadf815009"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "90cf963a-5fcc-44a6-bba5-fd57ba9a2de0",
+          "title": "UŁ Home Page",
+          "fullFile": "C:\\Users\\Wojtek\\Desktop\\selenium\\tests\\home.test.js",
+          "file": "\\tests\\home.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"UŁ Home Page\"",
+              "fullTitle": "UŁ Home Page \"before all\" hook in \"UŁ Home Page\"",
+              "timedOut": null,
+              "duration": 1606,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver = await buildDriver();\nawait driver.get(BASE_URL);",
+              "err": {},
+              "uuid": "4c1588e4-a279-41d7-b4b2-04a53079c756",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"UŁ Home Page\"",
+              "fullTitle": "UŁ Home Page \"after all\" hook in \"UŁ Home Page\"",
+              "timedOut": null,
+              "duration": 20,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "1a1fea1a-a455-44e5-a5e8-bdf8fdd2cb46",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "successfully loads page",
+              "fullTitle": "UŁ Home Page successfully loads page",
+              "timedOut": null,
+              "duration": 12,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const title = await driver\n  .findElement(By.id('hero-page-title'))\n  .getText()\n  .then((value) => value);\nexpect(title.replace(/\\s+/g, ' ').trim()).to.equal('UNIWERSYTET ŁÓDZKI');",
+              "err": {},
+              "uuid": "c1c70b8d-0c87-42b8-aa43-137e3ea5dd5a",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "has a working search feature",
+              "fullTitle": "UŁ Home Page has a working search feature",
+              "timedOut": null,
+              "duration": 192,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const searchButton = await driver.findElement(By.id('search-open'));\nawait searchButton.click();\nconst searchInput = await driver.findElement(By.id('header-search'));\nawait searchInput.sendKeys('rekrutacja', Key.RETURN);\nawait driver.wait(until.titleContains('Wyniki wyszukiwania'));",
+              "err": {},
+              "uuid": "59c70ab6-7b15-4dfd-baf3-28b511bd0bce",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c1c70b8d-0c87-42b8-aa43-137e3ea5dd5a",
+            "59c70ab6-7b15-4dfd-baf3-28b511bd0bce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 204,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "reportFilename": "report"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

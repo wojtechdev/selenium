@@ -2,10 +2,11 @@
   "dependencies": {
     "chai": "^6.2.2",
     "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
     "selenium-webdriver": "^4.39.0"
   },
   "scripts": {
-    "test": "mocha --no-timeouts 'tests/*.js'"
+    "test": "mocha tests/**/*.js --no-timeouts --parallel --reporter mochawesome --require mochawesome/register --reporter-options reportDir=reports,reportFilename=report"
   },
   "type": "module"
 }
