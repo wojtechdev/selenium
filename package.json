@@ -6,9 +6,8 @@
     "selenium-webdriver": "^4.39.0"
   },
   "scripts": {
-    "test": "npm run test:run && npm run test:report",
-    "test:run": "mocha --require ts-node/register tests/**/*.ts --no-timeouts --parallel --reporter mochawesome --reporter-options reportDir=reports/json,reportFilename=[name].json",
-    "test:report": "mochawesome-merge reports/json/*.json -o reports/report.json && mochawesome-report-generator reports/report.json -o reports",
+    "test": "mocha --require ts-node/register tests/**/*.ts --no-timeouts --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report",
+    "test:parallel": "mocha --require ts-node/register tests/**/*.ts --no-timeouts --parallel --reporter mochawesome --reporter-options reportDir=reports/json,reportFilename=[name].json",
     "build": "tsc",
     "test:watch": "mocha --require ts-node/register tests/**/*.ts --no-timeouts --watch --watch-files tests/**/*.ts,utils/**/*.ts"
   },
